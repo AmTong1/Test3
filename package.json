@@ -1,0 +1,26 @@
+{
+  "name": "employee-management-web-app",
+  "version": "1.0.0",
+  "description": "Employee Management Web Application with SQLite Database - Programmer Test Solution",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "programmer-test",
+    "crud",
+    "sqlite",
+    "express",
+    "web-app"
+  ],
+  "author": "Candidate",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "xlsx": "^0.18.5"
+  }
+}
