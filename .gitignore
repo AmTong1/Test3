@@ -1,0 +1,9 @@
+node_modules/
+.env
+*.db
+*.log
+*.bat
+package-lock.json
+employee_db_postgres.sql
+screenshot.png
+server.js

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-body">
+    <div class="inputs-container">
+      <div class="input-row">
+        <label for="empId">รหัสพนักงาน</label>
+        <input type="text" id="empId" autocomplete="off">
+      </div>
+      <div class="input-row">
+        <label for="fullName">ชื่อ นามสกุล</label>
+        <input type="text" id="fullName" autocomplete="off">
+      </div>
+      <div class="input-row">
+        <label for="empAge">อายุ</label>
+        <input type="number" id="empAge" autocomplete="off">
+      </div>
+      <div class="input-row">
+        <label for="empPhone">เบอร์โทร</label>
+        <input type="text" id="empPhone" autocomplete="off">
+      </div>
+    </div>
+    <div class="buttons-container">
+      <button type="button" id="btnInsert" class="form-btn">INSERT</button>
+      <button type="button" id="btnUpdate" class="form-btn">UPDATE</button>
+      <button type="button" id="btnDelete" class="form-btn">DELETE</button>
+    </div>
+    <div class="grid-frame">
+      <table class="datagrid" id="empGrid">
+        <thead>
+          <tr>
+            <th class="col-indicator"></th>
+            <th style="width: 20%;">รหัสพนักงาน</th>
+            <th style="width: 38%;">ชื่อ นามสกุล</th>
+            <th style="width: 14%; text-align: center;">อายุ</th>
+            <th style="width: 28%;">เบอร์โทร</th>
+          </tr>
+        </thead>
+        <tbody id="gridBody">
+        </tbody>
+      </table>
+    </div>
+    <div class="status-bar">
+      <span id="statusMessage">พร้อมใช้งาน (เชื่อมต่อ Backend API: http://localhost:5000)</span>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
